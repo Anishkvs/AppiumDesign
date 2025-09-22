@@ -2,10 +2,7 @@ package org.rsa.PageObjectModel;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.stc.utils.AndroidActions;
 import org.stc.utils.AppiumUtils;
-
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -30,7 +27,7 @@ public class CartPage extends AppiumUtils{
     private WebElement Proceed;
     public void setAcceptTC() {
     	// WebElement ele = driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/termsButton"));
-    	longPress(TCButton);
+    //	longPress(TCButton);
     	CloseTC.click();
     }
   

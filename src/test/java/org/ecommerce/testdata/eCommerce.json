@@ -1,0 +1,12 @@
+[
+	{
+		"name":"Test Message",
+		"gender": "female",
+		"country": "Argentina"
+	} ,
+	{
+		"name":"second Message",
+		"gender": "male",
+		"country": "Argentina"
+	}
+]

@@ -23,7 +23,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public abstract class AppiumUtils {
 
 	public AppiumDriverLocalService service;
-	
+
 	public Double getFormattedAmount(String amount)
 	{
 		Double price = Double.parseDouble(amount.substring(1));
@@ -67,6 +67,17 @@ public abstract class AppiumUtils {
 		return destinationFile;		
 		
 		
+	}
+	
+	
+	public AppiumDriverLocalService startAppiumServer(String ipAddress) {
+		service = new AppiumServiceBuilder()
+			    .withAppiumJS(new File("C:\\Users\\Anishkumar\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+			    .withIPAddress(ipAddress)
+			    .usingPort(4725)
+			    .build();	
+		service.start();
+		return service;
 	}
 	
 	

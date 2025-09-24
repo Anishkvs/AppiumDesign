@@ -1,0 +1,87 @@
+# Created at 2025-09-24T19:52:18.637
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,625 |-INFO in browserstack.shaded.ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [browserstack-logback-test.xml]'.
+
+# Created at 2025-09-24T19:52:18.638
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,626 |-INFO in browserstack.shaded.ch.qos.logback.classic.LoggerContext[default] - Found resource [browserstack-logback.xml] at [jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/browserstack/browserstack-java-sdk/1.27.0/browserstack-java-sdk-1.27.0.jar!/browserstack-logback.xml]'.
+
+# Created at 2025-09-24T19:52:18.639
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,626 |-WARN in browserstack.shaded.ch.qos.logback.classic.LoggerContext[default] - Resource [browserstack-logback.xml] occurs multiple times on the classpath.'.
+
+# Created at 2025-09-24T19:52:18.640
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,626 |-WARN in browserstack.shaded.ch.qos.logback.classic.LoggerContext[default] - Resource [browserstack-logback.xml] occurs at [jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/browserstack/browserstack-java-sdk/1.27.0/browserstack-java-sdk-1.27.0.jar!/browserstack-logback.xml]'.
+
+# Created at 2025-09-24T19:52:18.642
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,626 |-WARN in browserstack.shaded.ch.qos.logback.classic.LoggerContext[default] - Resource [browserstack-logback.xml] occurs at [jar:file:/C:/Windows/System32/config/systemprofile/.m2/repository/com/browserstack/browserstack-java-sdk/1.27.0/browserstack-java-sdk-1.27.0.jar!/browserstack-logback.xml]'.
+
+# Created at 2025-09-24T19:52:18.643
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,626 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.spi.ConfigurationWatchList@5bfbf16f - URL [jar:file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/browserstack/browserstack-java-sdk/1.27.0/browserstack-java-sdk-1.27.0.jar!/browserstack-logback.xml] is not of type file'.
+
+# Created at 2025-09-24T19:52:18.643
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,629 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set'.
+
+# Created at 2025-09-24T19:52:18.644
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,629 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word customHighlight with class [com.browserstack.CustomHighlightingCompositeConverter]'.
+
+# Created at 2025-09-24T19:52:18.645
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,629 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [browserstack.shaded.ch.qos.logback.core.FileAppender]'.
+
+# Created at 2025-09-24T19:52:18.646
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,629 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILEAPPENDER]'.
+
+# Created at 2025-09-24T19:52:18.647
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,629 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [browserstack.shaded.ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property'.
+
+# Created at 2025-09-24T19:52:18.648
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,630 |-INFO in browserstack.shaded.ch.qos.logback.core.FileAppender[FILEAPPENDER] - File property is set to [logs/browserstack-javaagent.log]'.
+
+# Created at 2025-09-24T19:52:18.648
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,630 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [browserstack.shaded.ch.qos.logback.core.FileAppender]'.
+
+# Created at 2025-09-24T19:52:18.649
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,630 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILEAPPENDERDEBUG]'.
+
+# Created at 2025-09-24T19:52:18.649
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,630 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [browserstack.shaded.ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property'.
+
+# Created at 2025-09-24T19:52:18.650
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,631 |-INFO in browserstack.shaded.ch.qos.logback.core.FileAppender[FILEAPPENDERDEBUG] - File property is set to [logs/browserstack-javaagent.debug.log]'.
+
+# Created at 2025-09-24T19:52:18.650
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,631 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [browserstack.shaded.ch.qos.logback.core.ConsoleAppender]'.
+
+# Created at 2025-09-24T19:52:18.652
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,631 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]'.
+
+# Created at 2025-09-24T19:52:18.653
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,631 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [browserstack.shaded.ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property'.
+
+# Created at 2025-09-24T19:52:18.653
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO'.
+
+# Created at 2025-09-24T19:52:18.654
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]'.
+
+# Created at 2025-09-24T19:52:18.654
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.browserstack] to TRACE'.
+
+# Created at 2025-09-24T19:52:18.655
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.browserstack] to false'.
+
+# Created at 2025-09-24T19:52:18.655
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILEAPPENDER] to Logger[com.browserstack]'.
+
+# Created at 2025-09-24T19:52:18.656
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILEAPPENDERDEBUG] to Logger[com.browserstack]'.
+
+# Created at 2025-09-24T19:52:18.656
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [stdoutPrinter] to false'.
+
+# Created at 2025-09-24T19:52:18.657
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[stdoutPrinter]'.
+
+# Created at 2025-09-24T19:52:18.657
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.'.
+
+# Created at 2025-09-24T19:52:19.040
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '19:52:18,632 |-INFO in browserstack.shaded.ch.qos.logback.classic.joran.JoranConfigurator@25af5db5 - Registering current configuration as safe fallback point'.
+

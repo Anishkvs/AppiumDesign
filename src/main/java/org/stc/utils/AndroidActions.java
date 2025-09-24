@@ -43,11 +43,19 @@ public class AndroidActions extends AppiumUtils{
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 3000));
 
 	}
-
+	
+	public void scrollText(String text, AppiumDriver driver) {
+	    driver.findElement(AppiumBy.androidUIAutomator(
+	        "new UiScrollable(new UiSelector().scrollable(true))"
+	        + ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"));
+	}
+/*
+ * 
+ 
 	public void scrollText(String text, AndroidDriver driver) {
 	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollIntoView(new UiSelector().text(\""+text+"\"))"));
 	}
-
+*/
 	public void waitForElementToAppear(WebElement ele, AppiumDriver driver)
 	{
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(30));

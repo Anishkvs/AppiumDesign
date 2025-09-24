@@ -9,34 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Dataprovider</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,937</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Dataprovider</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,208</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dataprovider &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">DataProviderFirst.DataProvider1</td><td><a href="#m0">findProduct</a></td><td rowspan="1">1758718524659</td><td rowspan="1">12567</td></tr><tr><th colspan="4">Dataprovider &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">DataProviderFirst.DataProvider1</td><td><a href="#m1">TC</a></td><td rowspan="1">1758718540277</td><td rowspan="1">6683</td></tr><tr class="passedeven"><td><a href="#m2">addProduct</a></td><td rowspan="1">1758718537973</td><td rowspan="1">2302</td></tr><tr class="passedeven"><td><a href="#m3">homePage</a></td><td rowspan="1">1758718515042</td><td rowspan="1">9607</td></tr><tr class="passedeven"><td><a href="#m4">proceed</a></td><td rowspan="1">1758718546962</td><td rowspan="1">6614</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dataprovider &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">DataProviderFirst.DataProvider1</td><td><a href="#m0">TC</a></td><td rowspan="1">1758724460050</td><td rowspan="1">6713</td></tr><tr class="passedeven"><td><a href="#m1">addProduct</a></td><td rowspan="1">1758724456914</td><td rowspan="1">3135</td></tr><tr class="passedeven"><td><a href="#m2">findProduct</a></td><td rowspan="1">1758724439976</td><td rowspan="1">16935</td></tr><tr class="passedeven"><td><a href="#m3">homePage</a></td><td rowspan="1">1758724430005</td><td rowspan="1">9956</td></tr><tr class="passedeven"><td><a href="#m4">proceed</a></td><td rowspan="1">1758724466764</td><td rowspan="1">6586</td></tr></tbody>
 </table>
-<h2>Dataprovider</h2><h3 id="m0">DataProviderFirst.DataProvider1#findProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e6e268da-b583-43ad-8060-21b38c538ebb, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().className(&quot;android.widget.ScrollView&quot;)).scrollIntoView(new UiSelector().text(&quot;Air Jordan 9 Retro&quot;))}]
-Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Anishkumar\eclipse..., automationName: UIAutomator2, deviceName: AnishEmulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A146B, appium:deviceName: RZCW30P5DQB, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZCW30P5DQB, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 65, appium:takesScreenshot: true, appium:viewportRect: {height: 2343, left: 0, top: 65, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e6e268da-b583-43ad-8060-21b38c538ebb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.stc.utils.AndroidActions.scrollText(AndroidActions.java:48)
-	at DataProviderFirst.DataProvider1.findProduct(DataProvider1.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">DataProviderFirst.DataProvider1#TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">DataProviderFirst.DataProvider1#addProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Dataprovider</h2><h3 id="m0">DataProviderFirst.DataProvider1#TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">DataProviderFirst.DataProvider1#addProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">DataProviderFirst.DataProvider1#findProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">DataProviderFirst.DataProvider1#homePage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{gender=female, name=Test Message, country=Argentina}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">DataProviderFirst.DataProvider1#proceed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

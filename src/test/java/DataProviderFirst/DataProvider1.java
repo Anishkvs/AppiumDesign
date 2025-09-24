@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class DataProvider1 extends AndroidBaseTest{
 
-	@Test(dataProvider="getData")
+	@Test(priority = 1, dataProvider="getData", groups= {"Smoke"})
 	public void homePage(HashMap<String, String> input) throws MalformedURLException, InterruptedException, URISyntaxException {
 
 			FormPage page  = new FormPage(driver);
@@ -30,27 +30,27 @@ public class DataProvider1 extends AndroidBaseTest{
 		    page.setLetsShop();
 //Choose the product from the list
 	} 
-			@Test()
+			@Test(priority = 2)
 		    public void findProduct() {
 		        AndroidActions actions = new AndroidActions();
 			    actions.scrollText("Air Jordan 9 Retro",driver);
 		        actions.scrollText("Jordan 6 Rings",driver);
 		}
 		    
-			@Test()
+			@Test(priority = 3)
 		 public void addProduct() {
 			 ProductCataloguePage catalogue = new ProductCataloguePage(driver);
 			  catalogue.setProductCount();
 		      catalogue.setAddCart(0);
-			  catalogue.setAddCart(0);
+			  catalogue.setAddCart(1);
 			  catalogue.setCartButton();
 		 }
-			@Test()
+			@Test(priority = 4)
 			public void TC() {
 			    CartPage cart = new CartPage(driver);
 			    cart.setAcceptTC();
 			}
-			@Test()
+			@Test(priority = 5)
 			public void proceed() throws InterruptedException {
 			    CartPage cart = new CartPage(driver);
 			    	cart.setClassName();

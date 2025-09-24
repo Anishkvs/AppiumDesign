@@ -28,7 +28,7 @@ public class DataProvider2 extends AndroidBaseTest{
 		    ProductCataloguePage catalogue = new ProductCataloguePage(driver);
 		    catalogue.setProductCount();
 		    catalogue.setAddCart(0);
-		    catalogue.setAddCart(0);
+		    catalogue.setAddCart(1);
 		    catalogue.setCartButton();
 		    Thread.sleep(4000);
 	}

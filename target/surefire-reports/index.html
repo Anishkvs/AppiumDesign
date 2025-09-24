@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="POM_App">POM_App</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -115,11 +101,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
                     <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.ecommerce.POM_Design" class="method navigator-link" hash-for-method="POM_App">POM_App</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider2" class="method navigator-link" hash-for-method="POM_App(Test Message, female, Argentina)">POM_App(Test Message, female, Argentina)</a> <!-- method navigator-link -->
@@ -137,41 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">DataProviderFirst.DataProvider1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="POM_App">
-                  </a> <!-- POM_App -->
-                  <span class="method-name">POM_App</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.nio.file.AccessDeniedException: C:\Users\Anishkumar\eclipse-workspaceMobile\appiumDesign\src\test\java\org\ecommerce\testdata
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: java.nio.file.AccessDeniedException: C:\Users\Anishkumar\eclipse-workspaceMobile\appiumDesign\src\test\java\org\ecommerce\testdata
-	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
-	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
-	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:231)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:357)
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:399)
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:371)
-	at java.base/java.nio.file.Files.newInputStream(Files.java:154)
-	at org.apache.commons.io.FileUtils.lambda$readFileToString$14(FileUtils.java:2768)
-	at org.apache.commons.io.IOUtils.toString(IOUtils.java:3204)
-	at org.apache.commons.io.IOUtils.toString(IOUtils.java:3179)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2768)
-	at org.stc.utils.AppiumUtils.getJsonData(AppiumUtils.java:36)
-	at DataProviderFirst.DataProvider1.getData(DataProvider1.java:40)
-	... 29 more
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -184,42 +130,27 @@ Caused by: java.nio.file.AccessDeniedException: C:\Users\Anishkumar\eclipse-work
                   </a> <!-- POM_App(Test Message, female, Argentina) -->
                   <span class="method-name">POM_App</span>
                   <span class="parameters">(Test Message,female,Argentina)</span>
-                  <div class="stack-trace">io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;\\usr\local\lib\node_modules\appium\build\lib\main.js&apos;
-	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at org.stc.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:49)
-	at org.ecommerce.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:33)
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20000ms 
+Host info: host: &apos;ANISH&apos;, ip: &apos;192.168.1.35&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=AnishEmulator, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\Anishkumar\eclipse-workspaceMobile\appiumDesign//src//test//java//org//rsa//resources//General-Store.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:automationName: UIAutomator2, appium:deviceName: AnishEmulator, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:automationName: UIAutomator2, appium:deviceName: AnishEmulator, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.ecommerce.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">org.ecommerce.POM_Design</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="POM_App">
-                  </a> <!-- POM_App -->
-                  <span class="method-name">POM_App</span>
-                  <div class="stack-trace">io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;\\usr\local\lib\node_modules\appium\build\lib\main.js&apos;
-	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
-	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at org.stc.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:49)
-	at org.ecommerce.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 27 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -235,14 +166,14 @@ Caused by: java.nio.file.AccessDeniedException: C:\Users\Anishkumar\eclipse-work
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.stc.utils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Dataprovider&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;DataProviderFirst.DataProvider1&quot;/&gt;
-      &lt;class name=&quot;org.ecommerce.AndroidBaseTest&quot;/&gt;
-      &lt;class name=&quot;org.ecommerce.POM_Design&quot;/&gt;
       &lt;class name=&quot;DataProviderFirst.DataProvider2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Dataprovider --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,7 +185,7 @@ Caused by: java.nio.file.AccessDeniedException: C:\Users\Anishkumar\eclipse-work
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Dataprovider (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,24 +211,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'POM_App')
 data.setCell(0, 2, 'DataProviderFirst.DataProvider2')
-data.setCell(0, 3, 2);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'POM_App')
-data.setCell(1, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(1, 3, 0);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'POM_App')
-data.setCell(2, 2, 'org.ecommerce.POM_Design')
-data.setCell(2, 3, 0);
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,56 +246,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">DataProviderFirst.DataProvider1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DataProviderFirst.DataProvider2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ConfigureAppium</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">2833 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.ecommerce.POM_Design</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ConfigureAppium</span>
-                <span class="method-start">2842 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">POM_App</span>
-                <span class="method-start">2852 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">2853 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DataProviderFirst.DataProvider2</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ConfigureAppium</span>
-                <span class="method-start">2854 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">POM_App(Test Message, female, Argentina)</span>
-                <span class="method-start">2859 ms</span>
+                <span class="method-start">28528 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2861 ms</span>
+                <span class="method-start">28538 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

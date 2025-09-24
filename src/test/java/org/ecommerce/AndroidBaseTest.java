@@ -41,8 +41,8 @@ public class AndroidBaseTest extends AppiumUtils{
 			//options.setApp(System.getProperty("user.dir")+"//src//test//java//org//rsa//resources//General-Store.apk");
 			
 			 driver = new AndroidDriver(service.getUrl(), options);
-			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			 formPage= new FormPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			// formPage= new FormPage(driver);
 	}
 	
 	

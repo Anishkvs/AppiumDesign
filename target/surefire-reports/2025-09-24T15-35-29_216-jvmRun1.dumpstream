@@ -1,0 +1,9 @@
+# Created at 2025-09-24T15:36:04.823
+An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [eaa9e9b0-f13f-43c8-97e6-4c35b5b96e40, screenshot {}]
+Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Anishkumar\eclipse..., automationName: UIAutomator2, deviceName: AnishEmulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A146B, appium:deviceName: RZCW30P5DQB, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZCW30P5DQB, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 65, appium:takesScreenshot: true, appium:viewportRect: {height: 2343, left: 0, top: 65, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: eaa9e9b0-f13f-43c8-97e6-4c35b5b96e40
+

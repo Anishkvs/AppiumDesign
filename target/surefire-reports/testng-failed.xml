@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <listeners>
+    <listener class-name="org.stc.utils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Dataprovider(failed)" verbose="0">
     <classes>
       <class name="DataProviderFirst.DataProvider2">
         <methods>
@@ -10,20 +13,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- DataProviderFirst.DataProvider2 -->
-      <class name="org.ecommerce.POM_Design">
-        <methods>
-          <include name="ConfigureAppium"/>
-          <include name="POM_App"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.ecommerce.POM_Design -->
-      <class name="DataProviderFirst.DataProvider1">
-        <methods>
-          <include name="ConfigureAppium"/>
-          <include name="tearDown"/>
-          <include name="POM_App"/>
-        </methods>
-      </class> <!-- DataProviderFirst.DataProvider1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Dataprovider(failed) -->
 </suite> <!-- Failed suite [Suite] -->

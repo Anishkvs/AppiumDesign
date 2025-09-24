@@ -4,19 +4,20 @@
   <listeners>
     <listener class-name="org.stc.utils.Listeners"/>
   </listeners>
-  <test thread-count="5" name="MultiDimention(failed)">
+  <test thread-count="5" name="Dataprovider(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="DataProviderFirst.DataProvider1">
         <methods>
-          <include name="proceed"/>
-          <include name="addProduct"/>
-          <include name="findProduct"/>
           <include name="ConfigureAppium"/>
           <include name="tearDown"/>
           <include name="homePage" invocation-numbers="1"/>
-          <include name="TC"/>
         </methods>
       </class> <!-- DataProviderFirst.DataProvider1 -->
     </classes>
-  </test> <!-- MultiDimention(failed) -->
+  </test> <!-- Dataprovider(failed) -->
 </suite> <!-- Failed suite [Suite] -->

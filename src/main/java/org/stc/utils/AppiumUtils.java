@@ -45,7 +45,7 @@ public abstract class AppiumUtils {
 	
 	public AppiumDriverLocalService startAppiumServer(String ipAddress,int port)
 	{
-		 service = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
+		 service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Anishkumar\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 					.withIPAddress(ipAddress).usingPort(port).build();
 				service.start();
 				return service;

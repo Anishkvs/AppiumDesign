@@ -37,9 +37,9 @@ public class ProductCataloguePage extends AppiumUtils{
     }
     
     public void setProductCount() {
-        AndroidActions actions = new AndroidActions();
-        actions.scrollText("Air Jordan 9 Retro",driver);
-        actions.scrollText("Jordan 6 Rings",driver);
+      //  AndroidActions actions = new AndroidActions();
+   //     actions.scrollText("Air Jordan 9 Retro",driver);
+    //    actions.scrollText("Jordan 6 Rings",driver);
        int productCount = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
 	    for (int i = 0; i < productCount; i++) {
 		        String productName = driver.findElements(By.id("com.androidsample.generalstore:id/productName"))

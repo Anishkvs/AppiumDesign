@@ -30,7 +30,7 @@ public class DataProvider2 extends AndroidBaseTest{
 		    catalogue.setAddCart(0);
 		    catalogue.setAddCart(0);
 		    catalogue.setCartButton();
-		 
+		    Thread.sleep(4000);
 	}
 	@DataProvider
 	public Object[][] getData()

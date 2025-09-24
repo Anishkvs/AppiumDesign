@@ -23,7 +23,7 @@ public class AndroidBaseTest extends AppiumUtils{
 	{
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//org//resources//data.properties");
-		prop.load(fis);                                                            
+		prop.load(fis);                                                             
 		String ipAddress = System.getProperty("ipAddress")!=null ? System.getProperty("ipAddress") : prop.getProperty("ipAddress");
 		System.out.println(ipAddress);
 	
@@ -36,9 +36,9 @@ public class AndroidBaseTest extends AppiumUtils{
 			UiAutomator2Options options = new UiAutomator2Options();
 			options.setDeviceName(prop.getProperty("AndroidDeviceNames")); //emulator
 			//options.setDeviceName("Android Device");// real device		
-			options.setChromedriverExecutable("//Users//rahulshetty//documents//chromedriver 11");
+		//	options.setChromedriverExecutable("//Users//rsa//documents//chromedriver 11");
 			options.setApp(System.getProperty("user.dir")+"//src//test//java//org//rsa//resources//General-Store.apk");
-			//options.setApp(System.getProperty("user.dir")+"//src//test//java//org//rahulshettyacademy//resources//General-Store.apk");
+			//options.setApp(System.getProperty("user.dir")+"//src//test//java//org//rsa//resources//General-Store.apk");
 			
 			 driver = new AndroidDriver(service.getUrl(), options);
 			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

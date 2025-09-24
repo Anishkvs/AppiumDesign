@@ -4,17 +4,6 @@
   <listeners>
     <listener class-name="org.stc.utils.Listeners"/>
   </listeners>
-  <test thread-count="5" name="MultiDimention(failed)" verbose="0">
-    <classes>
-      <class name="DataProviderFirst.DataProvider2">
-        <methods>
-          <include name="ConfigureAppium"/>
-          <include name="POM_App"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- DataProviderFirst.DataProvider2 -->
-    </classes>
-  </test> <!-- MultiDimention(failed) -->
   <test thread-count="5" name="Dataprovider(failed)" verbose="0">
     <classes>
       <class name="DataProviderFirst.DataProvider1">
@@ -22,8 +11,6 @@
           <include name="findProduct"/>
           <include name="ConfigureAppium"/>
           <include name="tearDown"/>
-          <include name="homePage"/>
-          <include name="TC"/>
         </methods>
       </class> <!-- DataProviderFirst.DataProvider1 -->
     </classes>

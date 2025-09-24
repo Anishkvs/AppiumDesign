@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,  1 skipped,  2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,34 +103,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="TC">TC</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="findProduct">findProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="homePage">homePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider2" class="method navigator-link" hash-for-method="POM_App(Test Message, female, Argentina)">POM_App(Test Message, female, Argentina)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,7 +117,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="TC">TC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DataProviderFirst.DataProvider1" class="method navigator-link" hash-for-method="homePage({gender=female, name=Test Message, country=Argentina})">homePage({gender=female, name=Test Message, country=Argentina})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -169,49 +155,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC">
-                  </a> <!-- TC -->
-                  <span class="method-name">TC</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.id: android:id/button1})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$CSx2gyC7.click(Unknown Source)
-	at org.rsa.PageObjectModel.CartPage.setAcceptTC(CartPage.java:31)
-	at DataProviderFirst.DataProvider1.TC(DataProvider1.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@43d6262c (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 35 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: android:id/button1})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 37 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="findProduct">
                   </a> <!-- findProduct -->
                   <span class="method-name">findProduct</span>
@@ -220,9 +163,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [54cb3698-e03f-4cbd-b4e9-fe0dcbe108de, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().className(&quot;android.widget.ScrollView&quot;)).scrollIntoView(new UiSelector().text(&quot;Air Jordan 9 Retro&quot;))}]
+Command: [e6e268da-b583-43ad-8060-21b38c538ebb, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().className(&quot;android.widget.ScrollView&quot;)).scrollIntoView(new UiSelector().text(&quot;Air Jordan 9 Retro&quot;))}]
 Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Anishkumar\eclipse..., automationName: UIAutomator2, deviceName: AnishEmulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A146B, appium:deviceName: RZCW30P5DQB, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZCW30P5DQB, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 65, appium:takesScreenshot: true, appium:viewportRect: {height: 2343, left: 0, top: 65, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 54cb3698-e03f-4cbd-b4e9-fe0dcbe108de
+Session ID: e6e268da-b583-43ad-8060-21b38c538ebb
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -230,7 +173,7 @@ Session ID: 54cb3698-e03f-4cbd-b4e9-fe0dcbe108de
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.stc.utils.AndroidActions.scrollText(AndroidActions.java:48)
@@ -240,73 +183,8 @@ Session ID: 54cb3698-e03f-4cbd-b4e9-fe0dcbe108de
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePage">
-                  </a> <!-- homePage -->
-                  <span class="method-name">homePage</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:365)
-	at java.base/java.util.ArrayList.get(ArrayList.java:428)
-	at DataProviderFirst.DataProvider1.getData(DataProvider1.java:65)
-	... 29 more
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">DataProviderFirst.DataProvider2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="POM_App(Test Message, female, Argentina)">
-                  </a> <!-- POM_App(Test Message, female, Argentina) -->
-                  <span class="method-name">POM_App</span>
-                  <span class="parameters">(Test Message,female,Argentina)</span>
-                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4725/status] to be available after 20001 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Anishkumar\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4725, --address, 127.0.0.1], Output: [38;5;112m[Appium][0m Welcome to Appium v2.19.0
-[38;5;112m[Appium][0m Non-default server args:
-[38;5;112m[Appium][0m { address: [32m&apos;127.0.0.1&apos;[39m, port: [33m4725[39m }
-[38;5;112m[Appium][0m The autodetected Appium home path: C:\Users\Anishkumar
-[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
-[38;5;112m[Appium][0m Requiring driver at C:\Users\Anishkumar\node_modules\appium-uiautomator2-driver\build\index.js
-[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 1.021s
-[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
-[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 127.0.0.1:4725
-[38;5;112m[Appium][0m Error: listen EADDRINUSE: address already in use 127.0.0.1:4725
-    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
-    at listenInCluster (node:net:1994:12)
-    at node:net:2203:7
-    at processTicksAndRejections (node:internal/process/task_queues:90:21)
-]
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
-	at org.stc.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:50)
-	at org.ecommerce.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4725/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
-	... 30 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:206)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
-	... 32 more
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -315,9 +193,24 @@ Caused by: java.util.concurrent.TimeoutException
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="TC">
+                  </a> <!-- TC -->
+                  <span class="method-name">TC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="addProduct">
                   </a> <!-- addProduct -->
                   <span class="method-name">addProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePage({gender=female, name=Test Message, country=Argentina})">
+                  </a> <!-- homePage({gender=female, name=Test Message, country=Argentina}) -->
+                  <span class="method-name">homePage</span>
+                  <span class="parameters">({gender=female, name=Test Message, country=Argentina})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -342,11 +235,6 @@ Caused by: java.util.concurrent.TimeoutException
   &lt;listeners&gt;
     &lt;listener class-name=&quot;org.stc.utils.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;MultiDimention&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;DataProviderFirst.DataProvider2&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- MultiDimention --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Dataprovider&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;DataProviderFirst.DataProvider1&quot;/&gt;
@@ -362,9 +250,6 @@ Caused by: java.util.concurrent.TimeoutException
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">MultiDimention (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Dataprovider (1 class)</span>
               </li>
@@ -400,36 +285,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addProduct')
+data.setCell(0, 1, 'findProduct')
 data.setCell(0, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(0, 3, 36094);
+data.setCell(0, 3, 12567);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'findProduct')
+data.setCell(1, 1, 'homePage')
 data.setCell(1, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(1, 3, 23841);
+data.setCell(1, 3, 9607);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC')
 data.setCell(2, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(2, 3, 20413);
+data.setCell(2, 3, 6683);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'proceed')
 data.setCell(3, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(3, 3, 6209);
+data.setCell(3, 3, 6614);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'POM_App')
-data.setCell(4, 2, 'DataProviderFirst.DataProvider2')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'homePage')
-data.setCell(5, 2, 'DataProviderFirst.DataProvider1')
-data.setCell(5, 3, 0);
+data.setCell(4, 1, 'addProduct')
+data.setCell(4, 2, 'DataProviderFirst.DataProvider1')
+data.setCell(4, 3, 2302);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -455,53 +336,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">DataProviderFirst.DataProvider2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DataProviderFirst.DataProvider1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ConfigureAppium</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">POM_App(Test Message, female, Argentina)</span>
-                <span class="method-start">20109 ms</span>
+                <span class="method-name">homePage({gender=female, name=Test Message, country=Argentina})</span>
+                <span class="method-start">11652 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20127 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DataProviderFirst.DataProvider1</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">ConfigureAppium</span>
-                <span class="method-start">21930 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">findProduct</span>
-                <span class="method-start">33315 ms</span>
+                <span class="method-start">21269 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addProduct</span>
-                <span class="method-start">58069 ms</span>
+                <span class="method-start">34583 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC</span>
-                <span class="method-start">94166 ms</span>
+                <span class="method-start">36887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">proceed</span>
-                <span class="method-start">115176 ms</span>
+                <span class="method-start">43572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121385 ms</span>
+                <span class="method-start">50188 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

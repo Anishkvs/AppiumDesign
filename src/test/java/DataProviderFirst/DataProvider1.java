@@ -31,9 +31,10 @@ public class DataProvider1 extends AndroidBaseTest{
 //Choose the product from the list
 	} 
 			@Test(priority = 2)
-		    public void findProduct() {
+		    public void findProduct() throws InterruptedException {
 		        AndroidActions actions = new AndroidActions();
-			    actions.scrollText("Air Jordan 9 Retro",driver);
+			    Thread.sleep(4000);
+		        actions.scrollText("Air Jordan 9 Retro",driver);
 		        actions.scrollText("Jordan 6 Rings",driver);
 		}
 		    

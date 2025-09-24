@@ -2,7 +2,10 @@ package org.rsa.PageObjectModel;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.stc.utils.AndroidActions;
 import org.stc.utils.AppiumUtils;
+
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -12,7 +15,7 @@ public class CartPage extends AppiumUtils{
     AndroidDriver driver;
 
     public CartPage(AndroidDriver driver) {
-    //	super(driver);
+    	//super();
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
@@ -25,9 +28,12 @@ public class CartPage extends AppiumUtils{
     private WebElement CheckBox;
     @AndroidFindBy(id="com.androidsample.generalstore:id/btnProceed")
     private WebElement Proceed;
+   
     public void setAcceptTC() {
-    	// WebElement ele = driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/termsButton"));
-    //	longPress(TCButton);
+        AndroidActions actions = new AndroidActions();
+ 
+    	WebElement ele = driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/termsButton"));
+    	actions.longPress(ele, driver);
     	CloseTC.click();
     }
   

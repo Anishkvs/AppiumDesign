@@ -62,8 +62,13 @@ public class DataProvider1 extends AndroidBaseTest{
 	public Object[][] getData() throws IOException
 	{
 		List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir") + "//src//test//java//org//ecommerce//testdata//eCommerce.json");
-	    return new Object[][] { {data.get(0)}, {data.get(1)} };                            
+	//    return new Object[][] { {data.get(0)}, {data.get(1)} };                            
 
+		 Object[][] returnObj = new Object[data.size()][1];
+		    for (int i = 0; i < data.size(); i++) {
+		        returnObj[i][0] = data.get(i);
+		    }
+		    return returnObj;
 	}
 	
 }

@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="7" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-24T15:51:55 IST" name="Suite" finished-at="2025-09-24T15:52:38 IST" duration-ms="43429">
+  <suite started-at="2025-09-24T18:12:10 IST" name="Suite" finished-at="2025-09-24T18:13:02 IST" duration-ms="52575">
     <groups>
       <group name="Smoke">
-        <method signature="DataProvider1.homePage(java.util.HashMap)[pri:1, instance:DataProviderFirst.DataProvider1@72c927f1]" name="homePage" class="DataProviderFirst.DataProvider1"/>
+        <method signature="DataProvider1.homePage(java.util.HashMap)[pri:1, instance:DataProviderFirst.DataProvider1@724bade8]" name="homePage" class="DataProviderFirst.DataProvider1"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-09-24T15:51:55 IST" name="MultiDimention" finished-at="2025-09-24T15:51:55 IST" duration-ms="9">
-    </test> <!-- MultiDimention -->
-    <test started-at="2025-09-24T15:51:57 IST" name="Dataprovider" finished-at="2025-09-24T15:52:38 IST" duration-ms="41928">
+    <test started-at="2025-09-24T18:12:10 IST" name="Dataprovider" finished-at="2025-09-24T18:13:02 IST" duration-ms="52575">
       <class name="DataProviderFirst.DataProvider1">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:DataProviderFirst.DataProvider1@72c927f1]" started-at="2025-09-24T15:51:57 IST" name="ConfigureAppium" finished-at="2025-09-24T15:52:08 IST" duration-ms="11245" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:10 IST" name="ConfigureAppium" finished-at="2025-09-24T18:12:19 IST" duration-ms="9493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="homePage(java.util.HashMap)[pri:1, instance:DataProviderFirst.DataProvider1@72c927f1]" started-at="2025-09-24T15:52:08 IST" name="homePage" data-provider="getData" finished-at="2025-09-24T15:52:17 IST" duration-ms="8767" status="PASS">
+        <test-method signature="homePage(java.util.HashMap)[pri:1, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:19 IST" name="homePage" data-provider="getData" finished-at="2025-09-24T18:12:28 IST" duration-ms="9244" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,26 +25,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method signature="homePage(java.util.HashMap)[pri:1, instance:DataProviderFirst.DataProvider1@72c927f1]" started-at="2025-09-24T15:52:17 IST" name="homePage" data-provider="getData" finished-at="2025-09-24T15:52:37 IST" duration-ms="20326" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{countryy=Argentina, namee=second Message, genderr=male}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="findProduct()[pri:2, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:28 IST" name="findProduct" finished-at="2025-09-24T18:12:41 IST" duration-ms="12484" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.androidsample.generalstore:id/btnLetsShop})]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [16bd6671-e02b-45a9-b28a-6fa9e9e10dd2, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().className("android.widget.ScrollView")).scrollIntoView(new UiSelector().text("Air Jordan 9 Retro"))}]
+Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Anishkumar\eclipse..., automationName: UIAutomator2, deviceName: AnishEmulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A146B, appium:deviceName: RZCW30P5DQB, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZCW30P5DQB, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 65, appium:takesScreenshot: true, appium:viewportRect: {height: 2343, left: 0, top: 65, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 16bd6671-e02b-45a9-b28a-6fa9e9e10dd2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.androidsample.generalstore:id/btnLetsShop})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$pESdhwto.click(Unknown Source)
-at org.rsa.PageObjectModel.FormPage.setLetsShop(FormPage.java:53)
-at DataProviderFirst.DataProvider1.homePage(DataProvider1.java:24)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [16bd6671-e02b-45a9-b28a-6fa9e9e10dd2, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().className("android.widget.ScrollView")).scrollIntoView(new UiSelector().text("Air Jordan 9 Retro"))}]
+Capabilities {appium:app: C:\Users\Anishkumar\eclipse..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Anishkumar\eclipse..., automationName: UIAutomator2, deviceName: AnishEmulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A146B, appium:deviceName: RZCW30P5DQB, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZCW30P5DQB, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 65, appium:takesScreenshot: true, appium:viewportRect: {height: 2343, left: 0, top: 65, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 16bd6671-e02b-45a9-b28a-6fa9e9e10dd2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.stc.utils.AndroidActions.scrollText(AndroidActions.java:48)
+at DataProviderFirst.DataProvider1.findProduct(DataProvider1.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,39 +91,25 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7981963f (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-... 33 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.androidsample.generalstore:id/btnLetsShop})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: RemoteWebDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 35 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataProviderFirst.DataProvider1@72c927f1]" started-at="2025-09-24T15:52:38 IST" name="tearDown" finished-at="2025-09-24T15:52:38 IST" duration-ms="706" status="PASS">
+        </test-method> <!-- findProduct -->
+        <test-method signature="addProduct()[pri:3, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:42 IST" name="addProduct" finished-at="2025-09-24T18:12:44 IST" duration-ms="2440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="TC()[pri:4, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:44 IST" name="TC" finished-at="2025-09-24T18:12:55 IST" duration-ms="11222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC -->
+        <test-method signature="proceed()[pri:5, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:12:55 IST" name="proceed" finished-at="2025-09-24T18:13:01 IST" duration-ms="6165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataProviderFirst.DataProvider1@724bade8]" started-at="2025-09-24T18:13:01 IST" name="tearDown" finished-at="2025-09-24T18:13:02 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

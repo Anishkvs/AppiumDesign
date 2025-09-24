@@ -5,17 +5,12 @@
     <listener class-name="org.stc.utils.Listeners"/>
   </listeners>
   <test thread-count="5" name="Dataprovider(failed)">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
     <classes>
       <class name="DataProviderFirst.DataProvider1">
         <methods>
+          <include name="findProduct"/>
           <include name="ConfigureAppium"/>
           <include name="tearDown"/>
-          <include name="homePage" invocation-numbers="1"/>
         </methods>
       </class> <!-- DataProviderFirst.DataProvider1 -->
     </classes>

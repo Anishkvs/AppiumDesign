@@ -3,10 +3,5 @@
 		"name":"Test Message",
 		"gender": "female",
 		"country": "Argentina"
-	} ,
-	{
-		"namee":"second Message",
-		"genderr": "male",
-		"countryy": "Argentina"
-	}
+	} 
 ]

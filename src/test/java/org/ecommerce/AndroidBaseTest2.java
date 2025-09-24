@@ -21,7 +21,6 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AndroidBaseTest2 extends AppiumUtils{
 	
@@ -41,8 +40,8 @@ public class AndroidBaseTest2 extends AppiumUtils{
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("AnishEmulator");
 //  WebDriverManager to manage chromedriver
-	    WebDriverManager.chromedriver().setup();
-	    options.setChromedriverExecutable(WebDriverManager.chromedriver().getDownloadedDriverPath());
+	 //   WebDriverManager.chromedriver().setup();
+	  //  options.setChromedriverExecutable(WebDriverManager.chromedriver().getDownloadedDriverPath());
 		options.setApp("C:\\Users\\Anishkumar\\eclipse-workspaceMobile\\RSA\\src\\test\\resources\\General-Store.apk");
 	//	options.setAppPackage("com.androidsample.generalstore");
 	//	options.setAppActivity("com.androidsample.generalstore.MainActivity");
